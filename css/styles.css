@@ -602,11 +602,18 @@ address {
     height: 581px;
     max-height: 100%;
     background-color: var(--white-color);
+    
+    transform: scale(1.1);
 }
 
-.is-hidden {
+.backdrop.is-hidden .modal {
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
     opacity: 0;
-    visibility: hidden;
+    visibility: visible;
     pointer-events: none;
 }
 
@@ -625,11 +632,8 @@ address {
     border-radius: 50%;
 
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--white-color);
-
+    background-color: var(--white-color); 
 }
-
-
 
 
 
