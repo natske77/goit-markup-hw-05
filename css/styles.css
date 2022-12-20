@@ -81,7 +81,7 @@ body {
     line-height: 1.17;
     text-decoration: none;
 
-    transition: color 250ms, fill 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .link:hover, .header .link:focus {
@@ -222,7 +222,7 @@ body {
     border-radius: 4px;
     border: none;
 
-    transition: background-color 250ms, box-shadow 250ms;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms;
 }
 
 .button-hero:hover, .button-hero:focus {
@@ -412,7 +412,7 @@ body {
     border-radius: 50%;
     fill: var(--grey-icons-color);
 
-    transition: background-color 250ms, fill 250ms;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -453,7 +453,7 @@ body {
     border: 1px solid var(--grey-icons-color);
     fill: var(--grey-icons-color);
 
-    transition: border-color 250ms, fill 250ms;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -568,7 +568,7 @@ address {
     background-color: rgba(255, 255, 255, 0.1);;
     fill: var(--white-color);
 
-    transition: background-color 250ms;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-media-list .link:hover,
@@ -603,12 +603,12 @@ address {
     max-height: 100%;
     background-color: var(--white-color);
     
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(1.1);
 }
 
 .backdrop.is-hidden .modal {
     transform: scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -660,7 +660,7 @@ address {
     background: var(--secondary-background-color);
 
     transition: box-shadow 250ms;
-    transition: background-color 250ms;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-list .list:not(:last-child) {
